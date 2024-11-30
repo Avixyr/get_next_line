@@ -6,7 +6,7 @@
 /*   By: abaudoui <abaudoui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 10:28:13 by abaudoui          #+#    #+#             */
-/*   Updated: 2024/11/25 18:48:44 by abaudoui         ###   ########.fr       */
+/*   Updated: 2024/11/30 12:05:21 by abaudoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ char	*get_next_line(int fd)
 	char		*line;
 	int			n;
 
-	if (BUFFER_SIZE < 0)
+	if (BUFFER_SIZE <= 0)
 		return (0);
 	line = ft_calloc(1, 1);
 	n = BUFFER_SIZE;
